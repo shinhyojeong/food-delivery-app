@@ -1,11 +1,11 @@
 import React from 'react';
-import {KeyboardAvoidingView, StyleSheet, Text, View} from 'react-native';
-import {Button, TextInput} from '../components';
+import {KeyboardAvoidingView, StyleSheet, View} from 'react-native';
+import {Button, Logo, TextInput} from '../components';
 
 const LoginScreen = () => {
   return (
     <KeyboardAvoidingView style={styles.container}>
-      <Text style={styles.title}>Food Delivery App</Text>
+      <Logo marginVertical={36} />
       <View>
         <TextInput
           autoFocus
@@ -24,15 +24,9 @@ const LoginScreen = () => {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 128,
+    marginTop: 48,
     padding: 12,
     height: '100%',
-  },
-  title: {
-    marginBottom: 36,
-    fontSize: 24,
-    fontWeight: '700',
-    textAlign: 'center',
   },
   input: {
     marginVertical: 4,
