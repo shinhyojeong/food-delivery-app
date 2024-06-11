@@ -7,7 +7,12 @@ import {
   TextInputFocusEventData,
 } from 'react-native';
 
-export const TextInput = ({onFocus, onBlur, ...props}: TextInputProps) => {
+export const TextInput = ({
+  onFocus,
+  onBlur,
+  style,
+  ...props
+}: TextInputProps) => {
   const [isFocused, setIsFocused] = useState(false);
 
   const handleFocus = (e: NativeSyntheticEvent<TextInputFocusEventData>) => {
@@ -24,7 +29,7 @@ export const TextInput = ({onFocus, onBlur, ...props}: TextInputProps) => {
 
   return (
     <NativeTextInput
-      style={[styles.input, isFocused && styles.focused]}
+      style={[styles.input, isFocused && styles.focused, style]}
       onFocus={handleFocus}
       onBlur={handleBlur}
       {...props}

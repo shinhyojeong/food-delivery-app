@@ -8,9 +8,9 @@ import {
 
 export type ButtonProps = {} & TouchableOpacityProps;
 
-export const Button = ({children, ...props}: ButtonProps) => {
+export const Button = ({children, style, ...props}: ButtonProps) => {
   return (
-    <TouchableOpacity style={styles.button} {...props}>
+    <TouchableOpacity style={[styles.button, style]} {...props}>
       <Text style={styles.text}>{children}</Text>
     </TouchableOpacity>
   );
