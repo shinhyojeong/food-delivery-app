@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "postinstall": "patch-package",
-    "android": "NODE_OPTIONS=--openssl-legacy-provider react-native run-android",
-    "ios": "NODE_OPTIONS=--openssl-legacy-provider react-native run-ios",
-    "start": "NODE_OPTIONS=--openssl-legacy-provider react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
@@ -18,8 +18,7 @@
     "react-native": "0.66.5",
     "react-native-paper": "^5.12.3",
     "react-native-safe-area-context": "^4.10.3",
-    "react-native-screens": "3.22.1",
-    "react-native-vector-icons": "^10.1.0"
+    "react-native-screens": "3.22.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
