@@ -1,10 +1,11 @@
 import React from 'react';
-import {KeyboardAvoidingView, StyleSheet, View} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import {Button, Logo, TextInput} from '../components';
+import {DismissAvoidingView} from '../components/DismissAvoidingView';
 
 const LoginScreen = () => {
   return (
-    <KeyboardAvoidingView style={styles.container}>
+    <DismissAvoidingView style={styles.container}>
       <Logo marginVertical={36} />
       <View>
         <TextInput
@@ -18,7 +19,7 @@ const LoginScreen = () => {
         />
         <Button style={styles.button}>로그인</Button>
       </View>
-    </KeyboardAvoidingView>
+    </DismissAvoidingView>
   );
 };
 
