@@ -24,7 +24,7 @@ const LoginScreen = () => {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 48,
+    marginTop: 128,
     padding: 12,
     height: '100%',
   },
