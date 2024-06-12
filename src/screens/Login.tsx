@@ -8,11 +8,7 @@ const LoginScreen = () => {
     <DismissAvoidingView style={styles.container}>
       <Logo marginVertical={36} />
       <View>
-        <TextInput
-          autoFocus
-          style={styles.input}
-          placeholder="이메일을 입력해주세요."
-        />
+        <TextInput style={styles.input} placeholder="이메일을 입력해주세요." />
         <TextInput
           style={styles.input}
           placeholder="비밀번호를 입력해주세요."
