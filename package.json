@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "ios:client": "npm run ios --workspaces=client"
+    "ios:client": "npm run ios --workspaces=client",
+    "start:server": "npm run start --workspaces=server"
   },
   "repository": {
     "type": "git",
